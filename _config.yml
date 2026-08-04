@@ -1,0 +1,32 @@
+# Demo site config. Consumers of the theme do NOT receive this file -- Jekyll
+# themes distribute only _layouts, _includes, _sass, and assets. See README.md
+# for the config and _data files a consuming site needs to supply.
+
+title: "Rowan Ellery"
+description: "Demo site for the Offprint Jekyll theme. Rowan Ellery is a fictional researcher; all publications and news below are invented."
+url: "https://gojiplus.github.io"
+baseurl: "/jekyll-theme-offprint"
+lang: "en"
+
+author:
+  name: "Rowan Ellery"
+  short_name: "R. Ellery"
+  role: "Assistant Professor of Information Science · Northgate University"
+  email: "rowan@example.edu"
+  googlescholar: "https://example.com/scholar/rowan-ellery"
+  github: "https://github.com/gojiplus"
+  orcid: "https://example.com/orcid/0000-0000-0000-0000"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+
+plugins:
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

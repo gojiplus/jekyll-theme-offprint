@@ -1,0 +1,48 @@
+# Demo data. Rowan Ellery is fictional and none of these papers exist.
+#
+# Fields: title (required), status (required: published | forthcoming | wip),
+# authors (required except for wip), year (required for published), venue,
+# pdf, doi, abstract, note.
+#
+# The author matching site.author.short_name is bolded automatically, so your
+# own name never has to be marked up per entry.
+
+- title: "Attention without arrival: How recommendation shapes what counts as news"
+  authors: ["R. Ellery", "P. Vasquez", "T. Okafor"]
+  year: 2025
+  venue: "Transactions on Networked Publics"
+  status: published
+  pdf: /files/example-paper.pdf
+  doi: "https://example.com/doi/10.0000/tnp.2025.001"
+  abstract: >
+    Recommendation systems decide not only what audiences see but what enters
+    the record as newsworthy. Using three years of platform traces, we separate
+    demand-side selection from supply-side promotion and show the two pull in
+    opposite directions during breaking events.
+
+- title: "Small newsrooms, long distances: Circulation as an infrastructure problem"
+  authors: ["R. Ellery", "M. Lindqvist"]
+  year: 2024
+  venue: "Quarterly Review of Information Environments"
+  status: published
+  doi: "https://example.com/doi/10.0000/qrie.2024.117"
+  abstract: >
+    Local news coverage is usually modeled as an economic outcome. We model it
+    instead as a logistics one, and find that distance to the nearest printing
+    facility explains more variance in circulation decline than advertising
+    revenue does.
+
+- title: "What editors think algorithms want"
+  authors: ["R. Ellery"]
+  venue: "Journal of Newsroom Studies"
+  status: forthcoming
+  abstract: >
+    Interviews with 24 editors reveal a folk theory of distribution that is
+    largely wrong in its particulars and largely right in its consequences.
+
+- title: "Measuring the shape of an information environment"
+  status: wip
+
+- title: "Ten years of platform migration, reconstructed from archives"
+  status: wip
+  note: "Earlier version presented at the Networked Media Workshop, 2025."

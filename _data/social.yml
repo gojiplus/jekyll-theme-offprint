@@ -1,0 +1,20 @@
+# Order and labels live here; the URLs live under `author:` in _config.yml.
+# A row whose author key is unset renders nothing, so deleting the key in
+# _config.yml is how you remove a link.
+- key: email
+  label: Email
+  prefix: "mailto:"
+- key: googlescholar
+  label: Scholar
+- key: github
+  label: GitHub
+- key: bluesky
+  label: Bluesky
+- key: orcid
+  label: ORCID
+- key: linkedin
+  label: LinkedIn
+- key: twitter
+  label: X
+- key: mastodon
+  label: Mastodon

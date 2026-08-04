@@ -1,0 +1,6 @@
+<footer>
+  {% for item in site.data.social %}
+  {% assign social_url = site.author[item.key] %}
+  {% if social_url %}<a href="{{ item.prefix }}{{ social_url | escape }}">{{ item.label | escape }}</a>{% endif %}
+  {% endfor %}
+</footer>

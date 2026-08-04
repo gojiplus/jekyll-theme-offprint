@@ -1,0 +1,24 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title %}{{ page.title | escape }} · {% endif %}{{ site.title | escape }}</title>
+{% assign page_description = page.description | default: site.description %}
+{% if page_description %}<meta name="description" content="{{ page_description | escape }}">{% endif %}
+{% if site.google_site_verification %}<meta name="google-site-verification" content="{{ site.google_site_verification }}">{% endif %}
+{% if site.noindex %}<meta name="robots" content="noindex, nofollow">{% endif %}
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+<meta name="theme-color" content="#fffefc" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14120f" media="(prefers-color-scheme: dark)">
+{% if site.favicon %}<link rel="icon" href="{{ site.favicon | relative_url }}" sizes="any">{% endif %}
+{% if site.favicon_svg %}<link rel="icon" href="{{ site.favicon_svg | relative_url }}" type="image/svg+xml">{% endif %}
+{% if site.apple_touch_icon %}<link rel="apple-touch-icon" href="{{ site.apple_touch_icon | relative_url }}" sizes="180x180">{% endif %}
+{% if site.webmanifest %}<link rel="manifest" href="{{ site.webmanifest | relative_url }}">{% endif %}
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+{% if site.google_analytics %}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ site.google_analytics }}');
+</script>
+{% endif %}
