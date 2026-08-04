@@ -3,7 +3,15 @@
 A Jekyll theme for academic personal sites. One column of well-set text, no
 sidebar, no avatar, no icon fonts, no JavaScript.
 
-**[See the demo →](https://gojiplus.github.io/jekyll-theme-offprint/)**
+**[See the live demo →](https://gojiplus.github.io/jekyll-theme-offprint/)**
+
+| Light | Dark |
+|---|---|
+| ![Home page, light](screenshots/home-light.png) | ![Home page, dark](screenshots/home-dark.png) |
+| ![Publications, light](screenshots/research-light.png) | ![Publications, dark](screenshots/research-dark.png) |
+
+Dark mode follows the reader's system setting — there is no toggle and no
+JavaScript.
 
 An *offprint* is a separately printed copy of a single journal article — what
 academics used to mail to colleagues who asked for their work. The theme is
